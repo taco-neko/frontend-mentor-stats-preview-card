@@ -1,0 +1,149 @@
+:root {
+  --clr-bg: hsl(233, 47%, 7%);
+  --clr-card: hsl(244, 38%, 16%);
+  --clr-accent: hsl(277, 64%, 61%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 0.938rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--clr-bg);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 2px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75em;
+  font-weight: 700;
+}
+@media screen and (min-width: 60em) {
+  h1 {
+    font-size: min(2.25rem, 3vw);
+  }
+}
+
+.accent, a {
+  color: var(--clr-accent);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  opacity: 0.75;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin-bottom: 2.5em;
+}
+@media screen and (min-width: 60em) {
+  p {
+    margin: 0;
+  }
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+.name {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.card {
+  background-color: var(--clr-card);
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 8rem auto;
+  width: 90%;
+  text-align: center;
+}
+@media screen and (min-width: 60em) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75rem;
+    max-width: 90%;
+    height: max(auto, 30rem);
+    text-align: left;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+@media screen and (min-width: 60em) {
+  article {
+    order: 1;
+    padding: min(4em, 4vw);
+    align-items: flex-start;
+  }
+}
+
+.text {
+  width: 85%;
+}
+
+.item-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2em;
+}
+@media screen and (min-width: 60em) {
+  .item-container {
+    flex-direction: row;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+figure {
+  background-color: var(--clr-accent);
+}
+figure source, figure img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+@media screen and (min-width: 60em) {
+  figure {
+    order: 2;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
