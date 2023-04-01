@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/stats-preview-card-using-html-and-css-sbkUQhZ_2k)
+- Live Site URL: [Github Pages](https://taco-neko.github.io/frontend-mentor-stats-preview-card/)
 
 ## My process
 
